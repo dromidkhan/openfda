@@ -1,0 +1,12 @@
+documentTitle: openFDA › Drugs › Imprint
+name: Solid Oral Dosage Form Imprint
+description: ""
+datasets:
+  - Imprint
+label: Solid Oral Dosage Form Imprint
+title: Solid Oral Dosage Form Imprint
+path: /apis/drug/imprint
+api_path: /drug/imprint
+start: 20090101
+status: drugimprint
+type: endpoint

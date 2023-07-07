@@ -1,0 +1,26 @@
+oneProduct:
+  title: One product
+  description:
+    - "This query searches for all actively marketed products, and asks for a single one."
+    - "See the [searchable fields](/apis/drug/imprint/searchable-fields/) for more about `marketing_status`."
+  params:
+    - "Search for all products which have `marketing_status` set to true."
+    - "Limit to 1 record."
+  query: 'https://api.fda.gov/drug/imprint.json?search=marketing_status:active&limit=1'
+oneTablet:
+  title: One tablet product
+  description:
+    - "This query searches all tablet products, and returns a single product."
+    - 'Double quotation marks `" "` surround phrases that must match exactly.'
+  params:
+  - "Search for all products which have `dosage_form` equal to 'TABLET'."
+  - "Limit to 1 record."
+  query: 'https://api.fda.gov/drug/imprint.json?search=dosage_form:"TABLET"&limit=1'
+shapeCount:
+  title: "Count of shapes"
+  description:
+    - "This query searches the endpoint for all products, and tells the API to count how many included each `shape`."
+    - "The suffix .exact is required by openFDA to count the unique full phrases in the field shape. Without it, the API will count each word in that field individually."
+  params:
+  - "Count the field `shape`."
+  query: 'https://api.fda.gov/drug/imprint.json?count=shape.exact'

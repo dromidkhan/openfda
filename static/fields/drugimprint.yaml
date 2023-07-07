@@ -1,0 +1,81 @@
+properties:
+  product_ndc:
+    description: "The labeler manufacturer code and product code segments of the NDC number, separated by a hyphen."
+    format:
+    pattern: ^[0-9]{5,4}-[0-9]{4,3}$
+    is_exact: true
+    possible_values:
+    type: string
+  generic_name:
+    description: "Generic name(s) of the drug product."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  image_file_name:
+    description: "The file name of the associate product image."
+    format: date
+    is_exact: true
+    possible_values:
+    type: type
+  dosage_form:
+    description: "The drug’s dosage form. There is no standard, but values may include terms like `tablet` or `solution for injection`."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  marketing_category:
+    description: "Product types are broken down into several potential Marketing Categories, such as NDA/ANDA/BLA, OTC Monograph, or Unapproved Drug."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  application_number_or_citation:
+    description: "Some types of marketing categories may be associated with FDA assigned numbers (e.g., NDA123456) or regulatory citations (e.g., part348)."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  marketing_status:
+    description: "Indicates how a drug product is sold in the United States."
+    format:
+    is_exact: true
+    type: string
+    possible_values:
+      type: one_of
+      value:
+        '1': "active"
+        '2': "completed"
+        '3': "new"
+        '4': "cancelled"
+  imprint:
+    description: "The identifying imprint on the drug product."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  color:
+    description: "The color the drug product."
+    format:
+    is_exact: true
+    possible_values:
+    type: string
+  shape:
+    description: "The shape of the drug product."
+    format: date
+    is_exact: true
+    possible_values:
+    type: type
+  size_mm:
+    description: "The size of the drug product, measured in millimeters."
+    format: date
+    is_exact: true
+    possible_values:
+    type: string
+  scoring_number_of_fragmets:
+    description: "The number of fragments separated by scoring."
+    format: date
+    is_exact: true
+    possible_values:
+    type: string
+type: object

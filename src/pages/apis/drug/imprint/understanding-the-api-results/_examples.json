@@ -1,0 +1,60 @@
+{
+  "anatomy": {
+    "meta": {
+      "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+      "terms": "https://open.fda.gov/terms/",
+      "license": "https://open.fda.gov/license/",
+      "last_updated": "2023-06-20",
+      "results": {
+        "skip": 0,
+        "limit": 1,
+        "total": 111200
+      }
+    },
+    "results": [
+      {
+        "marketing_status": "active",
+        "scoring_number_of_fragments": 1,
+        "product_ndc": "54569-0461",
+        "application_number_or_citation": "NDA021134",
+        "color": "WHITE",
+        "shape": "ROUND",
+        "generic_name": "Nitrostat",
+        "imprint": "N;4",
+        "marketing_category": "NDA",
+        "size_mm": 4,
+        "dosage_form": "TABLET"
+      }
+    ]
+  },
+  "count": {
+    "meta": {
+      "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+      "terms": "https://open.fda.gov/terms/",
+      "license": "https://open.fda.gov/license/",
+      "last_updated": "2023-06-20"
+    },
+    "results": [
+      {
+        "term": "TABLET",
+        "count": 44247
+      },
+      {
+        "term": "TABLET, FILM COATED",
+        "count": 24499
+      },
+      {
+        "term": "CAPSULE",
+        "count": 13664
+      },
+      {
+        "term": "TABLET, EXTENDED RELEASE",
+        "count": 4510
+      },
+      {
+        "term": "CAPSULE, LIQUID FILLED",
+        "count": 3349
+      }
+    ]
+  }
+}

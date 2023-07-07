@@ -1,0 +1,36 @@
+- title: "Top Dosage Form by Shape"
+  short: "Dosage Form by Shape"
+  description:
+    - "Display the top dosage forms, filtered by shape."
+  countParam: "dosage_form.exact"
+  filters:
+    - title: "All products"
+      searchParam: ""
+    - title: "Round"
+      searchParam: "shape:round"
+    - title: "Oval"
+      searchParam: "shape:oval"
+    - title: "Capsule"
+      searchParam: "shape:capsule"
+    - title: "Rectangle"
+      searchParam: "shape:rectangle"
+  type: Bar
+  dateConstraint: false
+- title: "Top Dosage Form by Color"
+  short: "Dosage Form by Color"
+  description:
+    - "Display the top dosage forms, filtered by color."
+  countParam: "dosage_form.exact"
+  filters:
+    - title: "All products"
+      searchParam: ""
+    - title: "White"
+      searchParam: "color:white"
+    - title: "Oval"
+      searchParam: "color:yellow"
+    - title: "Capsule"
+      searchParam: "color:pink"
+    - title: "Rectangle"
+      searchParam: "color:blue"
+  type: Donut
+  dateConstraint: false
